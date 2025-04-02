@@ -83,12 +83,12 @@
 #' @export
 #' @examples
 #' # retail data, 2 benchmarks series to disaggregate
-#' Y<-cbind(rjd3toolkit::aggregate(rjd3toolkit::retail$RetailSalesTotal, 1),
-#'          rjd3toolkit::aggregate(rjd3toolkit::retail$ClothingStores, 1))
+#' Y<-cbind(rjd3toolkit::aggregate(rjd3toolkit::Retail$RetailSalesTotal, 1),
+#'          rjd3toolkit::aggregate(rjd3toolkit::Retail$ClothingStores, 1))
 #' colnames(Y)<-c("retail","clothing")
-#' x<-cbind(rjd3toolkit::retail$FoodAndBeverageStore,
-#'          rjd3toolkit::retail$AutomobileDealers,
-#'          rjd3toolkit::retail$WomensClothingStores)
+#' x<-cbind(rjd3toolkit::Retail$FoodAndBeverageStore,
+#'          rjd3toolkit::Retail$AutomobileDealers,
+#'          rjd3toolkit::Retail$WomensClothingStores)
 #' colnames(x)<-c("retail_food", "retail_cars", "clothing_womens")
 #'
 #' # Example 1: Chow-Lin (with 2 indicators) and standard Denton

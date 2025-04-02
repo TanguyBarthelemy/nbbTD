@@ -23,8 +23,8 @@
 #' @return a list
 #' @export
 #' @examples
-#' Y<-rjd3toolkit::aggregate(rjd3toolkit::retail$RetailSalesTotal, 1)
-#' x<-rjd3toolkit::aggregate(rjd3toolkit::retail$FoodAndBeverageStores, 4)
+#' Y<-rjd3toolkit::aggregate(rjd3toolkit::Retail$RetailSalesTotal, 1)
+#' x<-rjd3toolkit::aggregate(rjd3toolkit::Retail$FoodAndBeverageStores, 4)
 #'
 #' outliers<-c(2008.75,2009.00)
 #' outliers.intensity<-c(10,5)

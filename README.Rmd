@@ -48,14 +48,14 @@ library("nbbTD")
 ```{r, echo = TRUE, eval = FALSE}
 ## Input: retail data, 2 benchmarks series to disaggregate, 3 indicators in total
 Y <- cbind(
-  rjd3toolkit::aggregate(rjd3toolkit::retail$RetailSalesTotal, 1),
-  rjd3toolkit::aggregate(rjd3toolkit::retail$ClothingStores, 1)
+  rjd3toolkit::aggregate(rjd3toolkit::Retail$RetailSalesTotal, 1),
+  rjd3toolkit::aggregate(rjd3toolkit::Retail$ClothingStores, 1)
 )
 colnames(Y) <- c("retail", "clothing")
 x <- cbind(
-  rjd3toolkit::aggregate(rjd3toolkit::retail$FoodAndBeverageStore, 4),
-  rjd3toolkit::aggregate(rjd3toolkit::retail$AutomobileDealers, 4),
-  rjd3toolkit::aggregate(rjd3toolkit::retail$WomensClothingStores, 4)
+  rjd3toolkit::aggregate(rjd3toolkit::Retail$FoodAndBeverageStore, 4),
+  rjd3toolkit::aggregate(rjd3toolkit::Retail$AutomobileDealers, 4),
+  rjd3toolkit::aggregate(rjd3toolkit::Retail$WomensClothingStores, 4)
 )
 colnames(x) <- c("retail_food", "retail_cars", "clothing_womens")
 
