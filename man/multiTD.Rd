@@ -32,11 +32,12 @@ for example when we'd like to use more than one indicator in a Chow-Lin
 model. Only quarterly or monthly indicators are handled.}
 
 \item{model}{Temporal disaggregation model to consider for each series.
-Possible models are currently "mbdenton", "chow-lin", "fernandez" and
-"litterman". The model to use can be a character string (when the same
-model must be used for all series) or a list of structured definition of
-the models. The name of the series must be submitted first. This must be
-followed by an equal sign and the model's name to use for the series.}
+Possible models are currently "mbdenton", "chow-lin", "fernandez",
+"litterman" and "chow-lin_no_cst". The model to use can be a character
+string (when the same model must be used for all series) or a list of
+structured definition of the models. The name of the series must be
+submitted first. This must be followed by an equal sign and the model's
+name to use for the series.}
 
 \item{outliers}{Level shift(s) in the Benchmark-to-Indicator ratio for the
 model-based Denton. Must be specified as a list of structured definition of

@@ -10,7 +10,9 @@ mbdenton(
   outliers = NULL,
   outliers.intensity = 10,
   manual_disagBI = NULL,
-  conversion = c("Sum", "Average")
+  conversion = c("Sum", "Average"),
+  series_name = NULL,
+  include_warnings = TRUE
 )
 }
 \arguments{
@@ -34,6 +36,9 @@ must be provided for each quarter/month of the year.}
 
 \item{conversion}{type of consistency between the annual benchmarks and the
 infra-annual indicators.}
+
+\item{series_name}{Character. Name of the series. Optional argument used to
+customize warning message if any.}
 }
 \value{
 a list
